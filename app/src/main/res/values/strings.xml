@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tyckit</string>
+    <string name="big_circle">Big Circle</string>
+    <string name="small_circle">Small Circle</string>
+    <string name="p2_l2">sit aliqua dolor do ament sint.</string>
+    <string name="dummy_image">Dummy Image</string>
+    <string name="p2_l1">Ament minim mollit non deserunt ullamco est</string>
+    <string name="next_page_transistion">Next page transistion</string>
+    <string name="tyckit_logo">Tyckit logo</string>
+    <string name="p1_l2">work, Right now</string>
+    <string name="next">Next</string>
+    <string name="p1_l1">Create Productive</string>
+    <string name="password">Password</string>
+    <string name="user_id">User ID</string>
+    <string name="login">Login</string>
+    <string name="forget_password">Forget Password?</string>
+
+
+</resources>
