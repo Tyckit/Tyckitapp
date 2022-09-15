@@ -85,6 +85,7 @@
         app:layout_constraintVertical_bias="0.75">
 
         <EditText
+            android:id="@+id/password"
             android:layout_width="330dp"
             android:layout_height="30sp"
             android:background="@drawable/login_box"
