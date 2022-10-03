@@ -12,8 +12,7 @@ import com.airbnb.lottie.LottieAnimationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN = 4000;
-    ImageView background, app_name;
+    ImageView app_name;
     LottieAnimationView lottieAnimationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +26,11 @@ public class MainActivity extends AppCompatActivity {
         lottieAnimationView.animate().translationY(-1600).setDuration(1000).setStartDelay(1500);
         app_name.animate().translationY(1400).setDuration(1000).setStartDelay(1500);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(MainActivity.this,OnBoarding1.class);
-                startActivity(intent);
-                finish();
-            }
-        }, SPLASH_SCREEN );
+        int SPLASH_SCREEN = 4000;
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(MainActivity.this,OnBoarding1.class);
+            startActivity(intent);
+            finish();
+        }, SPLASH_SCREEN);
     }
 }

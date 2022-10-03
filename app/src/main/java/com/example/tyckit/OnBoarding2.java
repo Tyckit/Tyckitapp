@@ -1,12 +1,10 @@
 package com.example.tyckit;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.view.WindowManager;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class OnBoarding2 extends AppCompatActivity {
 
@@ -17,7 +15,6 @@ public class OnBoarding2 extends AppCompatActivity {
         setContentView(R.layout.activity_on_boarding2);
 
         next_pg_btn = findViewById(R.id.next_button);
-
         next_pg_btn.setOnClickListener(view -> openOnBoarding3());
     }
 

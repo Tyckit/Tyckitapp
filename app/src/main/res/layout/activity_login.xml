@@ -69,53 +69,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"
+        android:autofillHints="" />
 
-
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
+        android:id="@+id/password"
         android:layout_width="330dp"
-        android:layout_height="30sp"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/icon_color"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:background="@drawable/login_box"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColorHint="#546E7A"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75">
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="330dp"
-            android:layout_height="30sp"
-            android:background="@drawable/login_box"
-            android:drawableStart="@drawable/password_btn"
-            android:drawablePadding="20dp"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:paddingStart="35dp"
-            android:paddingEnd="35dp"
-            android:textSize="12sp"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
-
-        </EditText>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/forget_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/forget_password"
-        android:textColor="@color/icon_color"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintVertical_bias="0.75"/>
 
     <TextView
         android:id="@+id/next_button"
